@@ -12,17 +12,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Todo(),
+      home: TodoApp(),
     );
   }
 }
 
-class Todo extends StatefulWidget {
+class TodoApp extends StatefulWidget {
   @override
-  _TodoState createState() => _TodoState();
+  _TodoAppState createState() => _TodoAppState();
 }
 
-class _TodoState extends State<Todo> {
+class _TodoAppState extends State<TodoApp> {
   List<String> _todoItems = [];
 
   // method to add todo
